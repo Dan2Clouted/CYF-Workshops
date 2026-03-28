@@ -1,6 +1,6 @@
-//increments the number in a node's text
+// increments the number in a node's text
 function increment(node) {
-  let current = node.textContent;
+  const current = node.textContent;
   node.textContent = Number(current) + 1;
 }
 
@@ -23,6 +23,7 @@ export function App() {
 
   const button = body.querySelector("#increment");
   const counter = body.querySelector("#counter");
+
   button.addEventListener("click", () => {
     increment(counter);
   });
