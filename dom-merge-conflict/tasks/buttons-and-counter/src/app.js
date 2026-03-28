@@ -27,5 +27,6 @@ export function App() {
     increment(counter);
   });
 
+  // Return the body element so that it can be rendered in index.js
   return body;
 }
